@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vedio Streaming</title>
+	<style type="text/css">
+		vedio
+		{
+			height:600px !important;
+			width:1200px !important;
+		}
+	</style>
+</head>
+<body>
+	<video id="videoPlayer" controls  autoplay>
+	  <source src="/video" type="video/mp4">
+	</video>
+
+	<form method="post" action="/vedio" encType="multipart/form-data">
+		<input type="text" name="uniqueName" placeholder="Enter a name">
+		<input name="file" type="file" >
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
